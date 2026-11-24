@@ -1,130 +1,115 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#102a43">
-  <meta name="description" content="Resume website of Pankaj Kumar.">
-  <title>Pankaj Kumar | Resume</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Pankaj Kumar's personal digital portfolio and resume.">
+  <meta name="theme-color" content="#080d1c">
+  <title>Pankaj Kumar | Digital Portfolio</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="site-header">
-    <nav class="nav wrap" aria-label="Main navigation">
-      <a class="brand" href="#home">PK<span>.</span></a>
-      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links">
-        <span></span><span></span><span></span><b class="sr-only">Toggle menu</b>
-      </button>
-      <div class="nav-links" id="nav-links">
-        <a href="#about">About</a>
-        <a href="#education">Education</a>
-        <a href="#contact">Details</a>
-        <a class="nav-download" href="assets/Pankaj_Kumar_Resume.pdf" download>Download CV</a>
+  <header class="topbar">
+    <nav class="nav container">
+      <a class="logo" href="#home">PANKAJ<span>.</span></a>
+      <button class="menu-btn" aria-label="Open navigation" aria-expanded="false">☰</button>
+      <div class="nav-menu">
+        <a href="#home">Home</a><a href="#about">About</a>
+        <a href="#education">Education</a><a href="#details">Details</a>
+        <a class="nav-cta" href="assets/Pankaj_Kumar_Resume.pdf" download>Download CV ↗</a>
       </div>
     </nav>
   </header>
 
   <main>
-    <section class="hero wrap" id="home">
-      <div class="hero-copy">
-        <p class="eyebrow">PERSONAL RESUME</p>
-        <h1>Pankaj <span>Kumar</span></h1>
-        <p class="hero-text">A graduate with a Bachelor of Science degree, ready to learn, grow and contribute with dedication.</p>
-        <div class="hero-actions">
-          <a class="button primary" href="#education">View Education</a>
-          <a class="button secondary" href="assets/Pankaj_Kumar_Resume.pdf" download>Download Resume <span aria-hidden="true">↓</span></a>
+    <section class="hero container" id="home">
+      <div class="hero-content">
+        <div class="availability"><i></i> PERSONAL DIGITAL PORTFOLIO</div>
+        <p class="intro">HELLO, MY NAME IS</p>
+        <h1>Pankaj<br><span>Kumar</span></h1>
+        <p class="hero-description">B.Sc. Graduate · Lifelong Learner</p>
+        <p class="hero-copy">Welcome to my digital portfolio. Explore my educational background and personal profile.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="#about">Explore Portfolio <span>↘</span></a>
+          <a class="btn btn-outline" href="assets/Pankaj_Kumar_Resume.pdf" download>Download Resume ↓</a>
         </div>
+        <div class="hero-meta"><span>BASED IN</span><strong>Aurangabad, Bihar, India</strong></div>
       </div>
-      <div class="hero-card" aria-label="Resume summary">
-        <div class="monogram">PK</div>
-        <p class="card-label">EDUCATION</p>
-        <h2>Bachelor of Science</h2>
-        <p class="card-note">2020 – 2023 · First Class</p>
-        <div class="card-line"></div>
-        <p class="card-label">LOCATION</p>
-        <p class="location">Aurangabad, Bihar, India</p>
+      <div class="visual">
+        <div class="orbit orbit-a"></div><div class="orbit orbit-b"></div>
+        <div class="profile-card">
+          <div class="profile-top"><span>PERSONAL PROFILE</span><span>01 / 01</span></div>
+          <div class="avatar"><img src="assets/pankaj-kumar-profile.jpg" alt="Pankaj Kumar"></div>
+          <h2>Pankaj Kumar</h2>
+          <p>Graduate · B.Sc. (2020–2023)</p>
+          <div class="profile-divider"></div>
+          <div class="profile-stat"><span>Matriculation</span><b>First Division</b></div>
+          <div class="profile-stat"><span>Intermediate</span><b>First Division</b></div>
+          <div class="profile-stat"><span>B.Sc.</span><b>First Class</b></div>
+          <div class="card-bottom">DIGITAL PORTFOLIO <span>✳</span></div>
+        </div>
+        <div class="floating-tag tag-one">EDUCATION <b>✦</b></div>
+        <div class="floating-tag tag-two">B.SC. GRADUATE</div>
       </div>
-      <div class="hero-orb orb-one"></div>
-      <div class="hero-orb orb-two"></div>
+      <a class="scroll-cue" href="#about">SCROLL TO EXPLORE <span>↓</span></a>
     </section>
 
-    <section class="section wrap" id="about">
-      <div class="section-heading">
-        <p class="eyebrow">INTRODUCTION</p>
-        <h2>About <span>Me</span></h2>
-      </div>
-      <div class="about-panel">
-        <p>My name is <strong>Pankaj Kumar</strong>. I completed my Bachelor of Science (B.Sc.) from 2020 to 2023 with First Class. I have also completed Matriculation and Intermediate, both with First Division.</p>
-        <p>I believe in continuous learning, sincerity and putting consistent effort into every responsibility.</p>
-      </div>
-    </section>
-
-    <section class="section education-section" id="education">
-      <div class="wrap">
-        <div class="section-heading">
-          <p class="eyebrow">ACADEMIC BACKGROUND</p>
-          <h2>Educational <span>Qualification</span></h2>
-        </div>
-        <div class="education-list">
-          <article class="education-item">
-            <div class="edu-year">2017</div>
-            <div><h3>Matriculation</h3><p>First Division</p></div>
-            <span class="edu-mark">01</span>
-          </article>
-          <article class="education-item">
-            <div class="edu-year">2019</div>
-            <div><h3>Intermediate</h3><p>First Division</p></div>
-            <span class="edu-mark">02</span>
-          </article>
-          <article class="education-item">
-            <div class="edu-year">2020–23</div>
-            <div><h3>Bachelor of Science (B.Sc.)</h3><p>First Class</p></div>
-            <span class="edu-mark">03</span>
-          </article>
+    <section class="section container" id="about">
+      <div class="section-kicker">01 — ABOUT ME</div>
+      <div class="section-grid">
+        <h2>A little<br>about <em>myself.</em></h2>
+        <div class="section-copy">
+          <p class="lead">I’m Pankaj Kumar, a graduate from Aurangabad, Bihar.</p>
+          <p>I completed my Bachelor of Science (B.Sc.) between 2020 and 2023 with First Class. I also completed Matriculation in 2017 and Intermediate in 2019, both with First Division.</p>
+          <p>I value sincerity, continuous learning and giving my best to every opportunity.</p>
         </div>
       </div>
     </section>
 
-    <section class="section wrap" id="contact">
-      <div class="section-heading">
-        <p class="eyebrow">PERSONAL INFORMATION</p>
-        <h2>Personal <span>Details</span></h2>
+    <section class="section education" id="education">
+      <div class="container">
+        <div class="section-kicker">02 — MY JOURNEY</div>
+        <div class="section-title-row"><h2>Education<span>.</span></h2><p>My academic background</p></div>
+        <div class="timeline">
+          <article class="timeline-item"><span class="year">2017</span><div><h3>Matriculation</h3><p>First Division</p></div><span class="number">01</span></article>
+          <article class="timeline-item"><span class="year">2019</span><div><h3>Intermediate</h3><p>First Division</p></div><span class="number">02</span></article>
+          <article class="timeline-item"><span class="year">2020 — 2023</span><div><h3>Bachelor of Science (B.Sc.)</h3><p>First Class</p></div><span class="number">03</span></article>
+        </div>
       </div>
-      <div class="details-grid">
-        <div class="detail"><span>Father's Name</span><strong>Birendra Singh</strong></div>
-        <div class="detail"><span>Mother's Name</span><strong>Dhanvarti Devi</strong></div>
+    </section>
+
+    <section class="section container" id="details">
+      <div class="section-kicker">03 — PERSONAL PROFILE</div>
+      <div class="section-title-row"><h2>Personal details<span>.</span></h2></div>
+      <div class="details">
+        <div class="detail"><span>Father’s Name</span><strong>Birendra Singh</strong></div>
+        <div class="detail"><span>Mother’s Name</span><strong>Dhanvarti Devi</strong></div>
         <div class="detail"><span>Village</span><strong>Sonpi</strong></div>
         <div class="detail"><span>Post</span><strong>Malhara</strong></div>
         <div class="detail"><span>Police Station</span><strong>Haspura</strong></div>
         <div class="detail"><span>District</span><strong>Aurangabad, Bihar</strong></div>
+        <div class="detail"><span>Mobile Number</span><strong><a href="tel:+917979873419">+91 7979873419</a></strong></div>
       </div>
     </section>
 
-    <section class="declaration wrap">
-      <p class="eyebrow">DECLARATION</p>
-      <p>I hereby declare that the information provided above is true and correct to the best of my knowledge and belief.</p>
-      <strong>Pankaj Kumar</strong>
+    <section class="closing container">
+      <div class="section-kicker">LET'S CONNECT</div>
+      <h2>Thank you for<br><em>visiting.</em></h2>
+      <p>For more information, you can view or download my resume.</p>
+      <div class="actions"><a class="btn btn-primary" href="assets/Pankaj_Kumar_Resume.pdf" download>Download My Resume ↗</a><a class="btn btn-outline" href="tel:+917979873419">Call Me ☎</a></div>
     </section>
   </main>
-
-  <footer class="footer">
-    <div class="wrap footer-inner">
-      <span>© <span id="year">2026</span> Pankaj Kumar</span>
-      <a href="#home">Back to top ↑</a>
-    </div>
-  </footer>
-
+  <footer><div class="container footer-inner"><span>© <span id="year"></span> Pankaj Kumar</span><a href="#home">BACK TO TOP ↑</a></div></footer>
   <script>
-    const toggle = document.querySelector('.menu-toggle');
-    const links = document.querySelector('.nav-links');
-    toggle.addEventListener('click', () => {
-      const open = toggle.getAttribute('aria-expanded') === 'true';
-      toggle.setAttribute('aria-expanded', String(!open));
-      links.classList.toggle('open', !open);
+    const btn = document.querySelector('.menu-btn');
+    const menu = document.querySelector('.nav-menu');
+    btn.addEventListener('click', () => {
+      const open = btn.getAttribute('aria-expanded') === 'true';
+      btn.setAttribute('aria-expanded', String(!open));
+      menu.classList.toggle('show', !open);
     });
-    links.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
-      toggle.setAttribute('aria-expanded', 'false');
-      links.classList.remove('open');
+    menu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+      menu.classList.remove('show'); btn.setAttribute('aria-expanded', 'false');
     }));
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
