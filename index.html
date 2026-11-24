@@ -1,64 +1,132 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Resume website of Pankaj Kumar">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#102a43">
+  <meta name="description" content="Resume website of Pankaj Kumar.">
   <title>Pankaj Kumar | Resume</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <main class="page">
-    <header class="hero">
-      <div class="avatar">PK</div>
-      <p class="eyebrow">PERSONAL PORTFOLIO</p>
-      <h1>Pankaj Kumar</h1>
-      <p class="subtitle">Bachelor of Science (B.Sc.)</p>
-      <a class="button" href="#details">View Resume</a>
-    </header>
+  <header class="site-header">
+    <nav class="nav wrap" aria-label="Main navigation">
+      <a class="brand" href="#home">PK<span>.</span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span><span></span><b class="sr-only">Toggle menu</b>
+      </button>
+      <div class="nav-links" id="nav-links">
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Details</a>
+        <a class="nav-download" href="assets/Pankaj_Kumar_Resume.pdf" download>Download CV</a>
+      </div>
+    </nav>
+  </header>
 
-    <section class="section" id="details">
-      <h2>Personal Details</h2>
-      <div class="details">
-        <p><span>Village</span>Sonpi</p>
-        <p><span>Post</span>Malhara</p>
-        <p><span>Police Station</span>Haspura</p>
-        <p><span>District</span>Aurangabad, Bihar</p>
-        <p><span>Father's Name</span>Birendra Singh</p>
-        <p><span>Mother's Name</span>Dhanvarti Devi</p>
+  <main>
+    <section class="hero wrap" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow">PERSONAL RESUME</p>
+        <h1>Pankaj <span>Kumar</span></h1>
+        <p class="hero-text">A graduate with a Bachelor of Science degree, ready to learn, grow and contribute with dedication.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#education">View Education</a>
+          <a class="button secondary" href="assets/Pankaj_Kumar_Resume.pdf" download>Download Resume <span aria-hidden="true">↓</span></a>
+        </div>
+      </div>
+      <div class="hero-card" aria-label="Resume summary">
+        <div class="monogram">PK</div>
+        <p class="card-label">EDUCATION</p>
+        <h2>Bachelor of Science</h2>
+        <p class="card-note">2020 – 2023 · First Class</p>
+        <div class="card-line"></div>
+        <p class="card-label">LOCATION</p>
+        <p class="location">Aurangabad, Bihar, India</p>
+      </div>
+      <div class="hero-orb orb-one"></div>
+      <div class="hero-orb orb-two"></div>
+    </section>
+
+    <section class="section wrap" id="about">
+      <div class="section-heading">
+        <p class="eyebrow">INTRODUCTION</p>
+        <h2>About <span>Me</span></h2>
+      </div>
+      <div class="about-panel">
+        <p>My name is <strong>Pankaj Kumar</strong>. I completed my Bachelor of Science (B.Sc.) from 2020 to 2023 with First Class. I have also completed Matriculation and Intermediate, both with First Division.</p>
+        <p>I believe in continuous learning, sincerity and putting consistent effort into every responsibility.</p>
       </div>
     </section>
 
-    <section class="section">
-      <h2>Educational Qualification</h2>
-      <div class="education">
-        <article class="edu-card">
-          <span class="year">2017</span>
-          <h3>Matriculation</h3>
-          <p>First Division</p>
-        </article>
-        <article class="edu-card">
-          <span class="year">2019</span>
-          <h3>Intermediate</h3>
-          <p>First Division</p>
-        </article>
-        <article class="edu-card">
-          <span class="year">2020–2023</span>
-          <h3>Bachelor of Science (B.Sc.)</h3>
-          <p>First Class</p>
-        </article>
+    <section class="section education-section" id="education">
+      <div class="wrap">
+        <div class="section-heading">
+          <p class="eyebrow">ACADEMIC BACKGROUND</p>
+          <h2>Educational <span>Qualification</span></h2>
+        </div>
+        <div class="education-list">
+          <article class="education-item">
+            <div class="edu-year">2017</div>
+            <div><h3>Matriculation</h3><p>First Division</p></div>
+            <span class="edu-mark">01</span>
+          </article>
+          <article class="education-item">
+            <div class="edu-year">2019</div>
+            <div><h3>Intermediate</h3><p>First Division</p></div>
+            <span class="edu-mark">02</span>
+          </article>
+          <article class="education-item">
+            <div class="edu-year">2020–23</div>
+            <div><h3>Bachelor of Science (B.Sc.)</h3><p>First Class</p></div>
+            <span class="edu-mark">03</span>
+          </article>
+        </div>
       </div>
     </section>
 
-    <section class="section declaration">
-      <h2>Declaration</h2>
+    <section class="section wrap" id="contact">
+      <div class="section-heading">
+        <p class="eyebrow">PERSONAL INFORMATION</p>
+        <h2>Personal <span>Details</span></h2>
+      </div>
+      <div class="details-grid">
+        <div class="detail"><span>Father's Name</span><strong>Birendra Singh</strong></div>
+        <div class="detail"><span>Mother's Name</span><strong>Dhanvarti Devi</strong></div>
+        <div class="detail"><span>Village</span><strong>Sonpi</strong></div>
+        <div class="detail"><span>Post</span><strong>Malhara</strong></div>
+        <div class="detail"><span>Police Station</span><strong>Haspura</strong></div>
+        <div class="detail"><span>District</span><strong>Aurangabad, Bihar</strong></div>
+      </div>
+    </section>
+
+    <section class="declaration wrap">
+      <p class="eyebrow">DECLARATION</p>
       <p>I hereby declare that the information provided above is true and correct to the best of my knowledge and belief.</p>
-      <p class="place">Place: Aurangabad, Bihar</p>
-      <p class="signature">Pankaj Kumar<br><span>Signature</span></p>
+      <strong>Pankaj Kumar</strong>
     </section>
-
-    <footer>© <span id="year"></span> Pankaj Kumar · Resume</footer>
   </main>
-  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+
+  <footer class="footer">
+    <div class="wrap footer-inner">
+      <span>© <span id="year">2026</span> Pankaj Kumar</span>
+      <a href="#home">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.querySelector('.menu-toggle');
+    const links = document.querySelector('.nav-links');
+    toggle.addEventListener('click', () => {
+      const open = toggle.getAttribute('aria-expanded') === 'true';
+      toggle.setAttribute('aria-expanded', String(!open));
+      links.classList.toggle('open', !open);
+    });
+    links.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
+      toggle.setAttribute('aria-expanded', 'false');
+      links.classList.remove('open');
+    }));
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>

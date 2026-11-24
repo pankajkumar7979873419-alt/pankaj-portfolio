@@ -1,12 +1,19 @@
-Pankaj Kumar - Resume Website
-
-How to use:
-1. Extract this ZIP file.
-2. Open index.html in any web browser.
-3. To publish online, upload index.html and style.css to a static hosting service.
+Pankaj Kumar – Responsive Resume Website
 
 Files:
-- index.html : Resume website content
-- style.css  : Website design and responsive layout
+- index.html: website content
+- style.css: responsive styling
+- assets/Pankaj_Kumar_Resume.pdf: downloadable resume PDF
 
-You can edit the text in index.html to update the resume.
+How to use:
+1. Extract the ZIP file.
+2. Open index.html in a browser.
+3. To publish online, upload the extracted folder to a static website host.
+
+Responsive layout:
+- Mobile phones
+- Tablets
+- Laptops
+- Desktop screens
+
+The website uses a responsive navigation menu on smaller screens and adapts the content layout to screen width.
